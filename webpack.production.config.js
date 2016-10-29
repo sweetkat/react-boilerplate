@@ -1,12 +1,18 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const vendorPlugins = require('../shared/vendorPlugins.js');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     entry: {
         app: './src/index.js',
-        vendor: vendorPlugins
+        vendor: [
+            'react',
+            'redux',
+            'react-redux',
+            'redux-thunk',
+            'react-dom'
+        ]
+
     },
     devtool: 'cheap-module-source-map',
     output: {
@@ -56,6 +62,6 @@ module.exports = {
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.DedupePlugin(),
         new ExtractTextPlugin('./index.css'),
-        new webpack.optimize.CommonsChunkPlugin('vendor', '../../shared/dist/vendor.bundle.js')
+        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
     ]
 };
