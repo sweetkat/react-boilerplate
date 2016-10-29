@@ -63,7 +63,7 @@ module.exports =  {
         new webpack.HotModuleReplacementPlugin(),
         // Generates a base html
         new HtmlWebpackPlugin({
-            template: './index.html'
+            template: 'src/index.html'
         })
     ]
 };
