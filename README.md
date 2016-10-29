@@ -1,4 +1,4 @@
-# Simple and clean React Boilerplate with Redux and Redux Thunk.
+# Simple React Boilerplate with Redux
 
 Contains a basic webpack setup and structure to start creating a React components.
 
