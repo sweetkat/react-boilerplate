@@ -1,0 +1,54 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "React": true,
+    "describe": true,
+    "it": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "array-bracket-spacing": ["error", "never"],
+    "arrow-parens": ["error", "as-needed", {"requireForBlockBody": true}],
+    "arrow-spacing": ["error"],
+    "brace-style": ["error"],
+    "comma-dangle": ["error", "never"],
+    "comma-spacing": ["error", {"before": false, "after": true}],
+    "computed-property-spacing": ["error", "never"],
+    "consistent-this": ["error", "self"],
+    "curly": ["error", "multi-line"],
+    "eqeqeq": ["error", "always"],
+    "indent": ["error", 4, { "SwitchCase": 1}],
+    "jsx-quotes": ["error", "prefer-double"],
+    "keyword-spacing": ["error", {"before": true}],
+    "max-nested-callbacks": ["error", 5],
+    "no-extra-semi": ["error"],
+    "no-template-curly-in-string": ["error"],
+    "no-unused-vars": ["error", {"vars": "all", "args": "after-used"}],
+    "no-use-before-define": ["error", {"functions": false}],
+    "object-curly-spacing": ["error", "always"],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "quotes": ["error", "single", {"allowTemplateLiterals": true}],
+    "semi": ["error", "always"],
+    "space-before-blocks": ["error", "always"],
+    "space-before-function-paren": ["error", "never"],
+    "space-in-parens": ["error", "never"],
+    "spaced-comment": ["error", "always"],
+    "template-curly-spacing": ["error", "never"]
+  }
+}
