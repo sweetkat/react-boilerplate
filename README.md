@@ -1,6 +1,6 @@
 # Simple React Boilerplate with Redux
 
-Contains a basic webpack setup and structure to start creating a React components.
+Contains a basic webpack setup and structure to start creating React components.
 
 ## Quick Start
 
